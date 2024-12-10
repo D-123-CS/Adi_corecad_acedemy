@@ -1,0 +1,72 @@
+.main h3,h4{
+    text-align: center;
+    color: #06BBCC;
+    margin: 3vw 0vw;
+}
+.main{
+    padding: 5vh;
+    margin: 10vh 25vh;
+    border: 1px solid rgb(242, 240, 240);
+    box-shadow: 10px 10px 10px rgb(185, 184, 184);
+    height: auto;
+    width: auto;
+}
+.image{
+    text-align: center
+}
+.main img{
+    height: 30vh;
+    width: 50vh;
+    margin:5vh;
+    box-shadow: 10px 10px 10px rgb(185, 184, 184);
+}
+.main .carousel-item{
+    margin-left: 30vh;
+    margin-top: 5vh;
+}
+
+
+/* Responsive Styles */
+
+/* For Tablets and Larger Screens */
+@media (min-width: 768px) {
+    .main {
+        margin: 10vh 20vh;
+        padding: 5vh;
+    }
+
+    .main img {
+        height: 25vh; /* Adjust the image size on larger screens */
+        width: 40vh;  /* Adjust the image size on larger screens */
+        margin: 3vh;
+    }
+
+    .main .carousel-item {
+        margin-left: 20vh; /* Adjust carousel item margin */
+        margin-top: 3vh;
+    }
+}
+
+/* For Mobile Screens (max-width 767px) */
+@media (max-width: 767px) {
+    /* Adjust the main section padding and margin */
+    .main {
+        margin: 5vh 2vw;
+        padding: 5vh 2vw;
+    }
+
+    .main h3, .main h4 {
+        margin: 5vw 0; /* More margin for titles on mobile */
+    }
+
+    .main img {
+        height: 40vh;  /* Increase image size on smaller screens */
+        width: 80vw;   /* Make the image width responsive (100% of viewport width) */
+        margin: 2vh 0;
+    }
+
+    .main .carousel-item {
+        margin-left: 0;  /* Remove extra margin from carousel on mobile */
+        margin-top: 3vh;
+    }
+}
